@@ -1,0 +1,378 @@
+/*  ____  _     _                   
+   / __ \| |__ (_)_   _  __ _ _ __  
+  / / _` | '_ \| | | | |/ _` | '_ \ 
+ | | (_| | |_) | | |_| | (_| | | | |
+  \ \__,_|_.__// |\__,_|\__,_|_| |_|
+   \____/    |__/                   
+                    juans your code.
+     this code is really messy.
+     you can look, but stealing
+     my layout will result in
+            punishment.
+*/
+
+.border-decoration .profile-picture-inside {
+    filter: none !important;
+    display: block !important;
+}
+.header-alt.overflow .nav-bar .nav-item a:hover{
+    animation: texthover 0.65s linear;
+}
+@keyframes texthover {
+    from {
+        text-shadow: 0 20px 6px transparent, 0 -20px 6px transparent;
+    }
+    50% {
+        text-shadow: 0 12px 6px white, 0 -12px 6px white;
+    }
+}
+.followers-profile-side .profile-picture:hover {
+    filter: none !important;
+}
+.clouds {
+    background: url(https://st.prntscr.com/2023/07/24/0635/img/page-bg.png);
+    /* ^^^ SHOUTOUT TO SKILLBRAINS (from lightshot) ^^^ */
+    filter: brightness(0.315) grayscale() contrast(1.8595);
+}
+.user-wide-card-meta .profile-picture-div .icon-user {
+    filter: brightness(0.3);
+    margin-top: -5px;
+}
+.user-wide-card-meta .profile-picture-div {
+    background-image: none;
+}
+.profile-picture-inside,
+.snowfield,
+.flying-hjonk,
+.profile-side-module .user-slim:nth-child(3) { display: none }
+.adsbygoogle {
+    display: none !important;
+}
+body {
+    padding: 0 !important;
+}
+.users-looking-in-feed {
+    background: var(--main-color);
+}
+.mt-10 .container-section:nth-child(5):after {
+    content: "bjuan_layout (v1.1_02)\ahello, have a great day!";
+    font-family: Matrix;
+    white-space: pre;
+    padding: 5px;
+    width: 244px;
+    height: auto;
+    background: var(--main-color) !important;
+    color: white;
+    opacity: 1;
+    display: block;
+    font-size: 12px;
+    filter: none;
+    position: absolute;
+    margin-top: 210px;
+}
+.username {
+    margin-bottom: -7px;
+}
+textarea, .comment-form .caption {
+    font-family: Matrix;
+}
+.dropdown-click-zone {
+  width: 170px;
+  height: 36px;
+}
+.alert-success, .alert-danger {
+    background: linear-gradient(0deg,var(--dark-main-color),var(--main-color)) !important;
+    border: 1px solid var(--main-color) !important;
+}
+.header-alt .nav-item:last-child {
+    background: transparent;
+    transition: 0.5s;
+    border-right: 1px solid #899cbf !important;
+}
+.header-alt .nav-item:last-child:hover {
+    background: #111 !important;
+}
+:root {
+    --main-color: #222;
+    --dark-main-color: #111;
+    --main-tbh: rgba(255,255,255,0.15);
+    --dark-main-tbh: rgba(20,20,20,0.85);
+}
+button, input, textarea, a, li, .attachment:hover, .image:hover {
+    cursor: url(https://kzzq.nekoweb.org/styles/hjonk/pointer.cur),auto!important;
+}
+#webamp .window, #webamp .window input, #webamp #main-window, #webamp #main-window.shade #title-bar, #webamp #playlist-window, button:active, input:active, textarea:active, a:active {
+    cursor: url(https://kzzq.nekoweb.org/styles/hjonk/main.cur),auto!important;
+}
+body {
+    z-index: 0;
+    cursor: url(https://kzzq.nekoweb.org/styles/hjonk/main.cur),auto!important;
+    background: linear-gradient(0deg,black,transparent);
+}
+.profile-banner {
+    border-radius: 0;
+}
+.header.overflow img,
+.panel-left-side .container-section,
+.container-section img, #webamp,
+.nav-bar,
+.user-card-wide .section,
+.user-card-wide .profile-banner,
+marquee,
+.profile-hover-card .user-metrics,
+.post-extra .caption {
+    filter: grayscale();
+}
+.container-section::after, .container-section:hover::after {
+    background: none !important;
+    box-shadow: 0 0;
+}
+.embed, .image, .quote, .modal {
+    background: var(--dark-main-color);
+    border: 0;
+}
+.embed {
+    padding: 5px 10px 2px;
+}
+.utue-player {
+    border: 1px solid var(--dark-main-color);
+}
+.embed:hover, .image:hover, .quote:hover {
+    background: var(--dark-main-tbh);
+}
+.container-section .embed {
+    color: black !important;
+}
+.profile-hover-card .icon, .container-section a.image-preview .image, .profile-hover-card a.profile-link,
+.panel-left-side .container-section:nth-child(1) {
+    filter: none !important;
+}
+.header.overflow img.logo {
+    animation: 5s rainbowimg linear infinite;
+}
+@keyframes rainbowimg {
+    0%,100% { filter: brightness(1) grayscale(); }
+    50% {
+    filter: brightness(0.75) grayscale();
+    }
+}
+.dropdown-content {
+    margin-left: 60px;
+}
+.profile-hover-card {
+    background: rgba(34, 34, 34, 0.932);
+    border-radius: 0;
+    backdrop-filter: blur(5px);
+}
+.profile-hover-card .profile-banner {
+    border: 0;
+}
+.user-card-wide button.primary.follow-user:before {
+    content: "let him "
+}
+.user-card-wide button.primary.follow-user:hover:before {
+    content: "don't ";
+}
+.user-card-wide button.primary.follow-user:after {
+    content: " you pleasurely"
+}
+.user-card-wide button.primary.follow-user:hover:after {
+    content: " the creature. play dead.";
+}
+.user-card-wide button.primary.follow-user {
+    padding: 2px 50px;
+    height: auto;
+    transition: 0.5s background;
+    margin-top: 5px;
+}
+.user-card-wide button.primary.follow-user:hover {
+    padding: 2px 29.5px;
+}
+button.primary.follow-user {
+    background: rgba(34, 34, 34, 0.432) !important;
+    border-radius: 0;
+    border: none;
+    outline: 1px solid grey;
+}
+button.primary.follow-user:hover {
+    background: rgba(87, 87, 87, 0.432) !important;
+}
+.comment-form textarea::placeholder {
+    text-transform: uppercase;
+}
+.dropdown-content, marquee#animated {
+    text-transform: lowercase;
+}
+.new-years-alert b {
+    text-shadow: 0 0 2px grey;
+    color: #888;
+}
+.post .dropdown-icon {
+    filter: grayscale() brightness(30%) !important;
+}
+.nav-right .dropdown-icon {
+    filter: grayscale() brightness(50%) !important;
+}
+.dropdown-content {
+    background: var(--main-color);
+}
+.dropdown-content a {
+    border: 0;
+    transition: 0.35s;
+}
+.dropdown-content a:hover {
+    background: rgba(255,255,255,0.25);
+}
+.mini-header-section {
+    height: 20px;
+}
+.container-section.user-card {
+    background: black;
+}
+.container-section.user-card:before {
+    width: 250px;
+    filter: brightness(0.4);
+    background: url('https://natively.neocities.org/styles/bg.gif') no-repeat;
+    background-size: 175px;
+    background-position: 15px 0;
+}
+.mini-header-section img {
+    margin-top: -10px;
+}
+.header .nav-bar .nav-item, .header .nav-bar .nav-item:hover {
+  font-size: 12px !important;
+}
+.mini-header-section b {
+    margin-left: 5px;
+    bottom: 3px;
+    position: relative;
+}
+.header.overflow {
+    height: 26px;
+    background: linear-gradient(0deg,var(--main-color) 25%,transparent 80%);
+}
+.header.overflow img.logo {
+    bottom: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.nav-right .profile-mini-header {
+  max-width: 255px;
+}
+.nav-right .username {
+    margin-right: 47px;
+    margin-top: 3px;
+    text-align: right;
+    float: right;
+}
+.nav-right .caption {
+    margin-top: -15px;
+}
+.nav-right .profile-picture {
+  width: 24px;
+  height: 24px;
+}
+.nav-bar, .nav-bar .nav-item {
+    padding-top: 0;
+    top: 0;
+    height: 26px;
+}
+.header-alt.overflow {
+    border-top: 1px solid grey !important;
+    background: var(--main-color);
+}
+.container-titlebar {
+    background: linear-gradient(0deg,#3535355b,#3d3d3d44);
+    color: white;
+    font-family: Matrix;
+    font-size: 11px;
+}
+.fancy-list .selected, .post {
+    background: none;
+}
+.section {
+    border-radius: 0;
+    background: none;
+}
+textarea, input[type="text"], input[type="number"], input[type="password"], input[type="email"], select {
+    background: none;
+    color: white;
+}
+.comment-form textarea, .comment-form input, .comment-form button, .section {
+    border: 1px solid var(--main-tbh);
+    border-radius: 0;
+}
+.section.user-metrics .user-metric, .section.user-metrics .user-metric a, .dropdown-content a {
+    color: white;
+}
+.container-section input[type="submit"], .container-section input[type="button"], .container-section button, .container-section .button {
+    border-radius: none;
+    border: 1px solid var(--main-tbh);
+    box-shadow: none;
+    background: none !important;
+    color: white;
+    transition: 0.5s;
+}
+.caption {
+    color: grey;
+}
+.header.overflow, .header-alt, .container-section, .container-titlebar {
+    border-radius: 0;
+    border: none;
+}
+.container-section::before {
+    background: none;
+}
+.profile-side-module > a, .container-section, .dropdown-wide li {
+    color: white;
+}
+.container-section {
+    background: var(--main-color);
+    box-shadow: 0 0 10px 1px transparent;
+    border: 1px solid var(--main-color);
+}
+.header .nav-bar .nav-item, .header .profile-mini-header {
+    transition: 0.5s;
+}
+.header .profile-mini-header:hover {
+    background: linear-gradient(0deg,#555,#222,#333) !important;
+}
+
+.container-section .dropdown ul {
+    background: var(--main-color) !important;
+    border: 1px solid transparent;
+}
+.container-section .dropdown ul li {
+    background: none;
+    transition: 0.3s;
+}
+.container-section .dropdown ul li:hover {
+    background: var(--main-tbh);
+}
+.dropdown ul li a {
+    color: white !important;
+}
+.user-card-wide {
+    transition: 0.5s height;
+    height: 262px;
+    overflow: hidden;
+}
+.user-card-wide:hover, .user-card-wide:active {
+    height: 290px;
+}
+.create-post.container-section.hotfix::before {
+    width: 100%;
+    height: 2.25px;
+    border-radius: 0;
+    filter: grayscale();
+    background: linear-gradient(90deg,#08e6ea,#ff22d5,#f8fb05);
+    content: '';
+    z-index: 1;
+}
+
+/* epilogue */
+.feed.mt-10.container-section:after {
+    content: "fankyu";
+    display: block;
+    bottom: 0;
+}
