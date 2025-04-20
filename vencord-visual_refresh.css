@@ -1,0 +1,221 @@
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+@import url("https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css");
+@import url("https://ukriu.github.io/cssCord/Other/noDistractions.css");
+@import url(https://blade04208.github.io/css/smolprofile.css);
+@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
+@import url(`https://nspc911.github.io/themes/vencord/VisualRefreshClientTheme.theme.css`);
+@import url(https://blade04208.github.io/ddex4/src/bubbles.css);
+
+
+// windows buttons keep it real boy
+.trailing_c38106 {
+}
+.bar_c38106[data-windows=true].show_c38106 {
+  margin-top: 10px;
+}
+.winButtons_c38106 {
+  align-items: inherit;
+  position: relative;
+  top: -14px;
+  gap: 0;
+}
+.winButton_c38106 {
+  height: 30px;
+  transition: 0.15s;
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: default;
+}
+
+
+:root {
+    /* change padding of the bar */
+     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+    /* Whether you want the chat to not move up and down when someone starts typing */
+    --rscb-no-jump-chat: 0;
+}
+.title_c38106{
+    background-color: transparent;
+    background: linear-gradient(to bottom, var(--background-base-lowest), #00000000);
+}
+
+.theme-darker {
+    --background-secondary-alt: color-mix(in oklab,var(--neutral-82) 100%, var(--theme-base-color,#000) var(--theme-base-color-amount, 0%));
+    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+
+.theme-midnight {
+    --background-secondary-alt: color-mix(in oklab, var(--neutral-95) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+}
+
+div[aria-label="User Profile Modal"] {
+  transform: scale(1.20);
+  > div[class^="root_"] {
+    max-height: 60rem;
+    > div {
+      height: 100%;
+    }
+  }
+}
+
+/* Remove Nitro tenure tooltip bloat */
+[class^="tooltipContainer_"]:has([class^="tooltipWordmarkContainer_"]) {
+    padding: initial;
+    & img, h1, h2, [class^="tooltipWordmarkContainer_"] { display: none; }
+    
+    & [class*="tooltipDescription_"] {
+        color: inherit!important;
+        font: inherit;
+        margin: inherit;
+        /* text-transform: lowercase;
+        &:after, &:before { text-transform: initial; } */
+        &:before { content: "Nitro "; }
+    }
+    & [src="/assets/242f4d0069d97414.svg"] ~ div:after { content: " (Bronze)" }
+    & [src="/assets/a28ccbd2a55e8413.svg"] ~ div:after { content: " (Silver)" }
+    & [src="/assets/45bb84c5fd852085.svg"] ~ div:after { content: " (Gold)" }
+    & [src="/assets/d343a0b3439e81d1.svg"] ~ div:after { content: " (Platinum)" }
+    & [src="/assets/bb018f1613e8d528.svg"] ~ div:after { content: " (Diamond)" }
+    & [src="/assets/11a893d07ab86fe4.svg"] ~ div:after { content: " (Emerald)" }
+    & [src="/assets/2801bd9ef48c1d87.svg"] ~ div:after { content: " (Ruby)" }
+    & [src="/assets/c20bd44dcc3b5ecb.svg"] ~ div:after { content: " (Opal)" }
+}
+
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6 > span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
+}
+
+.vc-membercount-member-list {
+  justify-content: space-between !important;
+  margin-top: 0 !important;
+  padding-inline: 0 !important;
+  background: var(--bg-overlay-4,var(--background-base-lowest));
+  border-bottom: 1.5px solid var(--border-subtle);
+  border-right: 1.5px solid var(--border-subtle);
+  margin-bottom: -16px !important;
+
+  .vc-membercount-online-dot, .vc-membercount-total-dot { margin: 0 !important; }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 0;
+    
+    &::after {
+      display: inline;
+      font-size: 0.8em;
+      margin-top: 2px;
+    }
+    &:nth-child(1) { margin-left: 20px; }
+    &:nth-child(1)::after {
+      content: "online";
+      color: var(--color-online);
+    }
+    &:nth-child(3) { padding-right: 20px; }
+    &:nth-child(3)::after {
+      content: "total";
+      color: var(--color-total);
+    }
+  }
+}
+
+/* Hide nameplates */
+[style^="background: linear-gradient(90deg"]:has([src*="/nameplates/"]) { display: none; }
+[class*="dm_"]:has([class*="linkPlated_"]) {
+    & [class*="linkPlated_"] { padding-right: var(--space-16); }
+    & [class*="closeButtonPlated_"] {
+        opacity: 0.7;
+        &:hover { opacity: 1; }
+        & [class^="innerCloseButtonPlated"] {
+            opacity: unset; 
+            background: none;
+            & svg {
+                color: inherit;
+                &:is(:hover, :focus-within) { color: var(--interactive-hover); }
+            }
+        }
+    }
+}
+/* REMOVE QUICK REACT BAR */
+.button_f7ecac.hoverBarButton_f84418:nth-of-type(1),
+.button_f7ecac.hoverBarButton_f84418:nth-of-type(2),
+.button_f7ecac.hoverBarButton_f84418:nth-of-type(3),
+.separator_f84418 {
+   display: none;
+}
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+.panels_c48ade {
+ &:has(.container_e131a9) {
+  background-color: var(--notice-background-positive);
+ }
+}
+:root {
+    --guildbar-avatar-size: 48px;
+    --blo-scale: 48;
+
+    -guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
+}
+
+.visual-refresh section[aria-label="User area"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: var(--custom-guild-list-width);
+    bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+.visual-refresh nav:has([data-list-id="guildsnav"]) {
+    margin-bottom: unset;
+}
