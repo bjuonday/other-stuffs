@@ -1,0 +1,78 @@
+.clouds {
+    background: white;
+    filter: none;
+}
+body {
+    animation: wew 3.5s ease-in-out;
+}
+button, input, textarea { transition: 0.35s; }
+.css-editor-js * { transition: 0.1s; }
+
+.mt-3.post-actions.sm.dropdown-wide, .post-extra { filter: grayscale(); }
+.container-section, .icon-user,
+.user-card-wide .profile-banner,
+.user-card-wide .user-metrics,
+.header-combo,
+.user-card-wide.container-section.mb-10,
+.header.overflow .nav-bar .nav-item:first-child a,
+.post-metrics .post-metric
+{ visibility: hidden; }
+.post-metrics .post-metric b, .post-metrics .post-metric b::after {
+    visibility: visible;
+}
+.post-metrics .post-metric:first-child b::after {
+    content: " souls";
+    font-weight: normal;
+}
+.post-metrics .post-metric:nth-child(2) b::after {
+    content: " rebirths";
+    font-weight: normal;
+}
+.header.overflow .nav-bar .nav-item:first-child a::before {
+    visibility: visible;
+    content: "go back.";
+    color: black;
+    display: block;
+    font-weight: normal;
+}
+#webamp { display: none !important; }
+button, input[type="submit"] {
+    background: white;
+    border: 1px solid var(--button-border-color) !important;
+}
+button:hover,
+input[type="submit"]:not(:disabled):hover, input[type="button"]:not(:disabled):hover, button:not(:disabled):hover, .button:not(:disabled):hover {
+    background: #DDD;
+}
+
+.container-section, .section.post-metrics, .section.user-metrics {
+    background: white;
+    box-shadow: 0 0;
+    border: 0;
+}
+.caption { color: grey; }
+.user-wide-card-meta .profile-picture-div,
+.header.overflow .nav-bar .nav-item:first-child,
+.container-section.mb-10,
+.create-post, .feed.mt-10,
+button.primary.follow-user {
+    transition: 0.35s;
+    visibility: visible;
+    border-left: none;
+}
+.user-wide-card-meta .profile-picture-div, .hover-upload { border-radius: 150px; }
+.header.overflow .nav-bar .nav-item:first-child { border-radius: 10px }
+.header.overflow .nav-bar .nav-item:first-child:hover { background: black !important; }
+.header.overflow .nav-bar .nav-item:first-child:hover a::before { color: white !important; }
+.header.overflow .nav-bar .nav-item:first-child a {
+    color: black !important;
+}
+
+@keyframes wew {
+    0%,40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
