@@ -1,0 +1,120 @@
+/*  ____  _     _                   
+   / __ \| |__ (_)_   _  __ _ _ __  
+  / / _` | '_ \| | | | |/ _` | '_ \ 
+ | | (_| | |_) | | |_| | (_| | | | |
+  \ \__,_|_.__// |\__,_|\__,_|_| |_|
+   \____/    |__/                   
+                    juans your code.
+                    infact, new-ass
+                               code.
+ */
+
+:root {
+    --main-color: #222;
+    --dark-main-color: #111;
+    --main-tbh: rgba(255,255,255,0.15);
+    --dark-main-tbh: rgba(20,20,20,0.85);
+}
+/* NEW THEME ? */
+body::before {
+    width: 100vw;
+    height: 1000vh;
+    display: block;
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(https://st.prntscr.com/2023/07/24/0635/img/page-bg.png);
+    /* ^^^ SHOUTOUT TO SKILLBRAINS (from lightshot) ^^^ */
+    filter: brightness(0.315) grayscale() contrast(1.8595);
+}
+.logo, .icon, .floating-heart { filter: grayscale(); }
+.profile-border {
+    display: none;
+}
+.container, .special-bg {
+    background: var(--main-color);
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 0 0 4px black;
+}
+.section-header .caption { color: white !important; }
+.container::before {
+    background: transparent;
+}
+a { text-decoration: none; }
+.language-select a, .pagination-elements a, .container.min.mt-10 a, a.mt-3 {
+    color: grey;
+}
+.language-select a:hover, .pagination-elements a:hover, .container.min.mt-10 a:hover, a.mt-3:hover {
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+.container.container-main .profile-banner-section .profile-picture {
+    height: 40px;
+    border: 1px solid white;
+}
+.container.header-container .column a, .container.header-container .profile-picture {
+    display: block;
+}
+.container.header-container .column a, .container.header-container .profile-picture, .post .profile-picture {
+    height: 28px;
+}
+.profile-dropdown:hover, .section:hover {
+    background: rgba(255,255,255,0.25) !important
+}
+button, [type="button"], [type="reset"], [type="submit"],
+.profile-dropdown {
+    -webkit-appearance: none;
+    transition: 0.35s;
+    background: transparent;
+    border: 0;
+    color: white;
+}
+button:hover, input[type="submit"]:hover {
+    background: rgba(255,255,255,0.25);
+}
+button, input[type="submit"] {
+    border: 1px solid rgba(255,255,255,0.15);
+}
+.alert {
+    background-color: rgb(63, 63, 30);
+    color: white;
+    border-bottom: 1px solid grey;
+}
+.banner-user-area {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-color: white;
+    background-color: var(--main-color);
+}
+.fancy-list li {
+    background-color: var(--dark-main-color);
+    border-bottom: 1px solid var(--dark-main-color);
+}
+.fancy-list li:hover {
+    background-color: #393939;
+}
+.fancy-list li.selected {
+    background-color: rgba(255,255,255,0.25);
+}
+.embed, .embed.youtube, .image, .quote, .modal {
+    background: var(--dark-main-color);
+    border: 0;
+}
+.embed {
+    padding: 5px 10px 2px;
+}
+.utue-player {
+    border: 1px solid var(--dark-main-color);
+}
+.embed:hover, .image:hover, .quote:hover {
+    background: var(--dark-main-tbh);
+}
+.fancy-list {
+    border: 1px solid white;
+}
+.section-header {
+    border-bottom: 1px dashed grey;
+}
